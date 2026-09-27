@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "IM Fell";
+  src: url("../../fonts/IM_Fell_DW_Pica_SC/IMFellDWPicaSC-Regular.ttf")
+    format("truetype");
+}
+
+body {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../../images/buttons/boton-salon-de-la-fama.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+  margin: 0;
+
+  font-family: "IM Fell", serif;
+  color: #ffffff;
+}
+
+.encabezado-salon {
+  position: relative;
+  text-align: center;
+  padding: 90px 20px 20px;
+}
+
+.titulo-salon {
+  color: #ffb000;
+  margin: 20px 0 10px;
+  font-size: 50px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
+}
+
+.introduccion-salon {
+  max-width: 760px;
+  margin: 0 auto;
+  color: #fff4c2;
+  font-size: 20px;
+  line-height: 1.5;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.regreso-nido {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+
+  display: inline-block;
+  padding: 10px 18px;
+
+  color: #fff4c2;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  border: 2px solid #ffb000;
+  border-radius: 8px;
+
+  text-decoration: none;
+  font-size: 18px;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.regreso-nido:hover {
+  transform: scale(1.05);
+  background-color: rgba(120, 45, 0, 0.85);
+  box-shadow: 0 5px 16px rgba(255, 176, 0, 0.45);
+}
+
+.regreso-nido:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+}
+
+.galeria-homenaje {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px 60px;
+}
+
+.galeria-homenaje h2 {
+  margin: 0 0 30px;
+  color: #ffb000;
+  text-align: center;
+  font-size: 34px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.galeria-homenaje__lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
