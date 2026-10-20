@@ -46,9 +46,11 @@ function crearTarjetaHomenaje(pionero) {
     descripcionPionero,
   );
 
-  listaHomenajes.append(tarjetaHomenaje);
+  return tarjetaHomenaje;
 }
 
-crearTarjetaHomenaje(pioneros[0]);
-crearTarjetaHomenaje(pioneros[1]);
-crearTarjetaHomenaje(pioneros[2]);
+pioneros.forEach((pionero) => {
+  const nuevaTarjeta = crearTarjetaHomenaje(pionero);
+
+  listaHomenajes.append(nuevaTarjeta);
+});
